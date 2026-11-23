@@ -110,6 +110,7 @@ void app_main()
     /* s8 tests */
     ESP_LOGI(TAG, "Running s8 tests...");
     RUN_TEST(esp_nn_add_elementwise_s8_test, "add_s8");
+    RUN_TEST(esp_nn_add_s8_sweep_test, "add_sweep_s8");
     RUN_TEST(esp_nn_mul_elementwise_s8_test, "mul_s8");
     RUN_TEST(esp_nn_mul_broadcast_channel_s8_test, "mul_broadcast_ch_s8");
     RUN_TEST(esp_nn_depthwise_conv_s8_test, "depthwise_conv_s8");
